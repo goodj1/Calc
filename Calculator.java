@@ -11,7 +11,7 @@ package Calculations;
  */
 public class Calculator extends javax.swing.JFrame {
     
-    
+    // These below are 
     double firstnum;
     double secondnum;
     double result;
@@ -240,12 +240,12 @@ public class Calculator extends javax.swing.JFrame {
                         .addComponent(jBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jBtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtn6, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jBtn9, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jBtn7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jBtn8, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jBtn8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jBtn7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jBtn6, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -257,16 +257,18 @@ public class Calculator extends javax.swing.JFrame {
                         .addGap(20, 20, 20)
                         .addComponent(jBtn13, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtn15, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jBtn16, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBtn14, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jBtn15, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jBtn14, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(55, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    //below is the code for subtraction. 
     private void jBtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn9ActionPerformed
         firstnum = Double.parseDouble(jtxtDisplay.getText());
         jtxtDisplay.setText("");
@@ -279,9 +281,10 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_jBtn11ActionPerformed
 
     private void jtxtDisplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtDisplayActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_jtxtDisplayActionPerformed
 
+    //below is the code for division
     private void jBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn1ActionPerformed
         firstnum = Double.parseDouble(jtxtDisplay.getText());
         jtxtDisplay.setText("");
@@ -310,6 +313,7 @@ public class Calculator extends javax.swing.JFrame {
         jtxtDisplay.setText(Enternumber);
     }//GEN-LAST:event_jBtn4ActionPerformed
 
+    //below is the code for multiplication
     private void jBtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn5ActionPerformed
         firstnum = Double.parseDouble(jtxtDisplay.getText());
         jtxtDisplay.setText("");
@@ -341,22 +345,27 @@ public class Calculator extends javax.swing.JFrame {
         jtxtDisplay.setText(Enternumber);
     }//GEN-LAST:event_jBtn12ActionPerformed
 
+    //below is the coding for the addition button
     private void jBtn13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn13ActionPerformed
         firstnum = Double.parseDouble(jtxtDisplay.getText());
         jtxtDisplay.setText("");
         operations = "+";
     }//GEN-LAST:event_jBtn13ActionPerformed
 
+    //below is the code for the clear button
     private void jBtn14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn14ActionPerformed
         String Enternumber = jtxtDisplay.getText() + jBtn1.getText();
         jtxtDisplay.setText("0");
     }//GEN-LAST:event_jBtn14ActionPerformed
 
+    //below is the code for the "0" button
     private void jBtn15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn15ActionPerformed
         String Enternumber = jtxtDisplay.getText() + jBtn15.getText();
         jtxtDisplay.setText(Enternumber);
     }//GEN-LAST:event_jBtn15ActionPerformed
 
+    
+    // below are all the codings for the equal to  and how they should be function with the other operators
     private void jBtn16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn16ActionPerformed
 
     String answer;
